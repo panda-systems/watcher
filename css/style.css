@@ -14,7 +14,7 @@ body {
 #header
 {
 	background-color:#ecf10e1;
-	padding:5px;
+	padding:12px;
 	overflow:auto;
 	color:#e54450;
 	text-align: center;
@@ -24,6 +24,8 @@ body {
 	padding: 10px;
 }
 #main label , #footer a{
+
+font-size: 22px;
 text-decoration: none;
 	line-height: 1.47em;
 }
@@ -32,19 +34,24 @@ text-decoration: none;
 }
 #main .content .desc{
 	padding-top:20px;
-	width: 50%;
-	margin-left: 25%;
+	/*width: 52%;
+    margin-left: 24%;*/
+	width: 278px;
+	  display: inline-flex;
 }
 #footer
 {
+	padding-top: 20px;
 	background-color:#727272;
 	clear:both;
 	text-align: center;
-	color: #ecf0f1;;
+	color: #ecf0f1;
+	height:329px;
 }
 #footer-buttons
 {
-	padding:17px;
+    font-family: HelveticaNeueCyr-Thin;
+	padding:8px;
 }
 #footer-buttons img
 {
@@ -53,16 +60,13 @@ text-decoration: none;
 }
 #footer-buttons a
 {
+    font-size: 22px;
 	color: #ecf0f1;
 	margin-left:15px;
 	margin-right:15px;
 }
 #footer-buttons.icons a {
 	margin: 0;
-}
-
-#footer-buttons a:hover {
-	text-decoration: underline;
 }
 
 #article,#sidebar{min-height:20px;margin-bottom:20px;overflow:auto}
@@ -89,13 +93,13 @@ li{padding:4px;margin-bottom:5px;background-color:#ffffcc;text-align:center;colo
 {
 	box-shadow: 0px 4px 4px 0px rgba(0,0,0,.1) inset;
 }
-.st-image{
-	height:156px;
-}
 .red-label{
 	color:red;
 }
-
+  @font-face {
+  font-family: HelveticaNeueCyr-Thin;
+  src: url(fonts/HelveticaNeueCyr-Thin.otf);
+}
 
 @media only screen and (min-width: 180px) {
 	.full-screen-image
@@ -112,11 +116,15 @@ li{padding:4px;margin-bottom:5px;background-color:#ffffcc;text-align:center;colo
 		height: 175px;
 	}
 	.content{
+	  font-family: HelveticaNeueCyr-Thin;
 		padding: 0px;
+	}
+	.eyeImage{
+	height: 100px;
 	}
 	#main
 	{
-		padding:30px 15px 0px 15px;
+		padding:30px 10px 0px 10px;
 	}
 	#mobile-image{}
 }
@@ -126,6 +134,9 @@ li{padding:4px;margin-bottom:5px;background-color:#ffffcc;text-align:center;colo
 @media only screen and (min-width: 768px) {
 	#footer  #article , #footer  #sidebar 
 	{width:49%
+	}
+	#footer{
+	height: 270px;
 	}
 	.iPhoneImage
 	{
@@ -171,6 +182,9 @@ li{padding:4px;margin-bottom:5px;background-color:#ffffcc;text-align:center;colo
 	.about #article  .content, .about  #sidebar .content
 	{
 		text-align:left;
+	}
+		.eyeImage{
+	height: 124px;
 	}
 
 	#article
@@ -226,6 +240,9 @@ li{padding:4px;margin-bottom:5px;background-color:#ffffcc;text-align:center;colo
 	.WatchImage
 	{
 		height: 270px;
+	}
+			.eyeImage{
+	height: 160px;
 	}
 	#main
 	{
